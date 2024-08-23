@@ -1,0 +1,27 @@
+{
+  "name": "pico-display-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "scripts": {
+    "dev": "cd web && vite",
+    "example": "cd example && vite",
+    "docs": "typedoc --out docs ./index.js ./src/components/index.js ./pico/index.js ./web/index.js"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./components": "./src/components/index.js",
+    "./pico": "./pico/index.js",
+    "./web": "./web/index.js"
+  },
+  "dependencies": {
+    "simple-fonts": "git+https://github.com/niklauslee/simple-fonts.git"
+  },
+  "devDependencies": {
+    "typedoc": "^0.26.3",
+    "typescript": "^5.5.3",
+    "vite": "^5.2.11"
+  }
+}
